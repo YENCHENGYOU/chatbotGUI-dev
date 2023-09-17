@@ -7,15 +7,10 @@ body {
     color: #212529;
     text-align: left;
     background-color: #fff;
-    min-width: 960px;
 }
 
 .wrapper {
     position: relative;
-}
-
-.wrapper, body, html {
-    min-height: 100%;
 }
 
 .main-header .navbar-nav .nav-item {
@@ -62,15 +57,7 @@ li {
 .ml-auto, .mx-auto {
     margin-left: auto!important;
 }
-.navbar-nav {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
+
 dl, ol, ul {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -100,6 +87,9 @@ html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .dropSetting {
@@ -154,13 +144,13 @@ html {
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  height: 100vh; /* 確保佔滿整個視口的高度 */
 }
 
 .content {
   display: flex; 
   flex-direction: column; /* 設為column，所以內部元件是垂直堆疊的 */
-  flex: 1;
+  flex: 1; /* 允許它根據需要擴展 */
+  flex-shrink: 1; /* 允許它根據需要縮小 */
   overflow-y: auto;
   justify-content: flex-end; /* 將消息置於底部 */
 }
@@ -172,4 +162,3 @@ html {
   margin-right: auto;
   margin-bottom: 10px;
 }
-
