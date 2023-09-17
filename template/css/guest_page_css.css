@@ -1,0 +1,60 @@
+/* CSS */
+.guest_button {
+  align-items: center;
+  background-color: #C39BD3;
+  border-radius: 12px;
+  border:none;
+  color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family:Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.25;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 180px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.guest_button:hover{
+  background-color:  #AF7AC5;
+}
+
+
+
+/*div in middle
+set width to 15%, control button width
+*/
+
+.center {
+    margin: auto;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+.description {
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    color: #000000;
+}
+
+.container {
+    width:auto;
+    display:block;
+    padding-left:25%;
+    padding-right:25%;
+}

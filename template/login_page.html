@@ -1,0 +1,40 @@
+<!-- HTML !-->
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="login_page_css.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fa-facebook {
+            color: #fff;
+            margin-right: 10px;
+        }
+
+        .fa-google {
+            color: #fff;
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body class="loginpage">
+
+    <div class="center">
+        <div class="container">
+            <div class="description">Login</div>
+        </div>
+        <div class="container">
+            <a href="{{ url_for('login_google') }}"><button class="button-35 google" role="button">
+                <span class="fa fa-google"></span>
+                Continue with Google
+            </button>
+        </a>
+        </div>
+        <div class="container">
+            <button class="button-35 facebook" role="button">
+                <a class="fa fa-facebook"></a>            
+                Continue with Facebook
+            </button>
+        </div>
+    </div>
+</body>
+</html>
